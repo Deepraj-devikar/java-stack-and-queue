@@ -1,12 +1,15 @@
 package com.stackandqueue;
 
 public class Stack <Type extends Comparable<Type>> extends LinkedList<Type>{
+	/*
+	 * Last In First Out (LIFO) and First In Last Out (FILO) principle
+	 */
 	Stack() {
 		super();
 	}
 
 	/**
-	 * add item to the head of the stack
+	 * add item to the top of the stack
 	 * @param item
 	 */
 	public void push(Type item) {
@@ -14,7 +17,7 @@ public class Stack <Type extends Comparable<Type>> extends LinkedList<Type>{
 	}
 	
 	/**
-	 * remove item at the head of stack then remove element from head and shift head to the next element
+	 * return item from the top of stack then remove element from top and shift top to the next element
 	 */
 	@Override
 	public Type pop() {
@@ -22,7 +25,7 @@ public class Stack <Type extends Comparable<Type>> extends LinkedList<Type>{
 	}
 	
 	/**
-	 * returns the element at head position of the stack and do nothing operations
+	 * returns the element at top position of the stack and do nothing operations
 	 * @return head item from linked list
 	 */
 	public Type peek() {
