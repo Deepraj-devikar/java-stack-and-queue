@@ -25,7 +25,7 @@ public class Stack <Type extends Comparable<Type>> extends LinkedList<Type>{
 	 * returns the element at head position of the stack and do nothing operations
 	 * @return head item from linked list
 	 */
-	public Type Peek() {
+	public Type peek() {
 		return super.headItem();
 	}
 }

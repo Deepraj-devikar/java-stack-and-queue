@@ -9,6 +9,11 @@ public class StackAndQueue {
 		stack.push(30);
 		stack.push(56);
 		System.out.println(stack);
+		while(!stack.isEmpty()) {
+			System.out.println("Peek element is "+stack.peek());
+			System.out.println("Pop element is "+stack.pop());
+		}
+		System.out.println(stack);
 	}
 
 }
